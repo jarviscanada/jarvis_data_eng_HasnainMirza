@@ -46,7 +46,7 @@ case $cmd in
    
 
   # Start or stop the container
-	docker container $cmd $db_username
+	docker container $cmd jrvs-psql
 	exit $?
 	;;	
 
