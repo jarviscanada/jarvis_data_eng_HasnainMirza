@@ -51,7 +51,14 @@ for psl_docker.sh
 psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 
 for host_info.sh
-
-
+```
+/scripts/bash host_info.sh "localhost" 5432 "host_agent" "postgres" "mypassword"
+```
+for host_usage.sh
+```
+/scripts/host_info.sh "localhost" 5432 "host_agent" "postgres" "mypassword"
+```
 # Improvements
-
+- 
+- Theres a risk of SQL injection in the database queries. We could sanitize the input to mitigate risk
+- 
