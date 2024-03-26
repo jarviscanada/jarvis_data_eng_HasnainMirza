@@ -41,11 +41,11 @@ host__usage.sh - Insert real time usage hardware specs values to table host_info
 
 for psl_docker.sh
 
-# Create Psql with docker 
+**Create Psql with docker**
 ./scripts/psql_docker.sh create db_username db_password
 
 
-# Initialize the tables 
+**Initialize the tables**
 psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 
 for host_info.sh
