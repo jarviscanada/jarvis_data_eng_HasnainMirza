@@ -1,4 +1,4 @@
-Introduction
+**Introduction**
 This tool allows users to review hardware specifications of the system. It is the users especially the owner of the system / computer who would find this tool useful. It can display hardware and usage information for multiple systems/nodes. It entails lot's of useful information. The project was built using Bash script, PSQL and technologies like Docker and git Version control.
 
 Database & Tables
@@ -36,10 +36,18 @@ host_info.sh - Insert real time hardware specs values to table host_info
 host__usage.sh - Insert real time usage hardware specs values to table host_info 
 
 
-Usage 
+**Usage**
 
-```
-![image](https://github.com/jarviscanada/jarvis_data_eng_HasnainMirza/assets/94781274/eff54d23-014b-400b-88ed-ea51a89dc9e7)
+for psl_docker.sh
+
+# Create Psql with docker 
+./scripts/psql_docker.sh create db_username db_password
+
+
+# Initialize the tables 
+psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
+
+for host_info.sh
 
 
 Improvements
