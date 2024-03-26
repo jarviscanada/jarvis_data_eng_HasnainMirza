@@ -1,4 +1,4 @@
-**Introduction**
+# Introduction
 
 This tool allows users to review hardware specifications of the system. It is the users especially the owner of the system / computer who would find this tool useful. It can display hardware and usage information for multiple systems/nodes. It entails lot's of useful information. The project was built using Bash script, PSQL and technologies like Docker and git Version control.
 
@@ -28,7 +28,7 @@ disk_io : number of disk input/output (I/O) operations currently in progress
 disk_available : amount of available disk space on the node's storage device(MB)
 
 ```
-Script Descriptions
+# Script Descriptions
 
 psql_docker.sh - Set up a psql instance using docker
 ddl.sql - The DDL script defines the schema for two tables: host_info and host_usage.
@@ -37,7 +37,7 @@ host_info.sh - Insert real time hardware specs values to table host_info
 host__usage.sh - Insert real time usage hardware specs values to table host_info 
 
 
-**Usage**
+# Usage
 
 for psl_docker.sh
 
@@ -51,5 +51,5 @@ psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 for host_info.sh
 
 
-**Improvements**
+# Improvements
 
