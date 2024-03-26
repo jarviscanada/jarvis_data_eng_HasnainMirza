@@ -17,6 +17,7 @@ total_meme: total amount of memory (RAM) installed on the node (MB)
 timestamp : the timestamp indicating when the data was collected or recorded
 
 Host_usage Table
+
 timestamp: the timestamp indicating when the data was collected or recorded
 host_id : Indictoing which computer it is talking about from host_info
 memory_free : amount of available memory (RAM) on the node(MB)
@@ -28,14 +29,17 @@ disk_available : amount of available disk space on the node's storage device(MB)
 ```
 Script Descriptions
 
-psql_docker.sh - 
+psql_docker.sh - Set up a psql instance using docker
 ddl.sql - The DDL script defines the schema for two tables: host_info and host_usage.
 
-host_info.sh
-host__usage.sh
+host_info.sh - Insert real time hardware specs values to table host_info
+host__usage.sh - Insert real time usage hardware specs values to table host_info 
 
 
 Usage 
+
+```
+![image](https://github.com/jarviscanada/jarvis_data_eng_HasnainMirza/assets/94781274/eff54d23-014b-400b-88ed-ea51a89dc9e7)
 
 
 Improvements
