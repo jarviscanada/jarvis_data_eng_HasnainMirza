@@ -30,11 +30,13 @@ disk_available : amount of available disk space on the node's storage device(MB)
 ```
 # Script Descriptions
 
-psql_docker.sh - Set up a psql instance using docker
+psql_docker.sh - Set up a psql instance using docker.
+
 ddl.sql - The DDL script defines the schema for two tables: host_info and host_usage.
 
-host_info.sh - Insert real time hardware specs values to table host_info
-host__usage.sh - Insert real time usage hardware specs values to table host_info 
+host_info.sh - Insert real time hardware specs values to table host_info.
+
+host__usage.sh - Insert real time usage hardware specs values to table host_info.
 
 
 # Usage
